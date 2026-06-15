@@ -10,7 +10,7 @@ st.set_page_config(page_title="LiuGong Matcher v19", page_icon="🔧", layout="w
 
 @st.cache_resource
 def load_engine():
-    sys.path.insert(0, os.path.join(os.path.dirname(__file__), "engine"))
+    sys.path.insert(0, os.path.dirname(__file__))  # add project root for 'from engine.xxx' imports
     import engine_v19 as eng
     return eng
 
