@@ -66,7 +66,9 @@ try:
     eng = load_engine()
     config, db = load_data()
 except Exception as e:
-    st.error(f"Failed to load data: {e}")
+    import traceback
+    st.error("Failed to load engine/data:")
+    st.code(traceback.format_exc())
     st.stop()
 
 # ==================== SIDEBAR ====================
