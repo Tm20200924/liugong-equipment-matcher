@@ -1,0 +1,48 @@
+﻿# === 敏感数据（不提交） ===
+engine/product_db.json
+engine/product_db_full.json
+engine/product_specs_cache.json
+engine/product_specs_extracted.json
+engine/competitor_db.json
+engine/liugong_db_from_html.json
+engine/config.json
+engine/strings_v9.json
+
+# === 客户数据 ===
+inquiries/*.xlsx
+inquiries/*.xls
+inquiries/*.csv
+inquiries/*.doc
+inquiries/*.docx
+
+# === 输出报告 ===
+outputs/*.xlsx
+outputs/*.xls
+
+# === 产品资料 ===
+product_specs/
+products/
+
+# === 临时文件 ===
+work/
+__pycache__/
+*.pyc
+*.pyo
+.bash_history
+
+# === Streamlit secrets ===
+.streamlit/secrets.toml
+
+# === 旧版引擎（归档） ===
+engine/engine_v15.py
+engine/engine_v16.py
+engine/engine_v17.py
+engine/engine_v18.py
+engine/build_db_v2.py
+engine/inquiry_matcher.py
+engine/llm_parser.py
+engine/pdf_spec_importer.py
+
+# === OS ===
+.DS_Store
+Thumbs.db
